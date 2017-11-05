@@ -12,7 +12,7 @@ html, body {
 body {
 	font-family: 'Inconsolata', monospace;
 	color: #141417;
-	background: #d0cfc5;
+	background: #f0f0f0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -25,6 +25,17 @@ a {
 	text-decoration: none;
 	color: #000;
 	outline: none;
+
+}
+
+.topline {
+    background-color: #0076E5;
+    position: relative;
+    height: 10px;
+    width: 100%;
+	margin: 0px auto;
+	margin-bottom: 10px;
+    padding: 0px auto;
 }
 
 a:hover,
@@ -38,6 +49,18 @@ a:focus {
 	width: 0;
 	height: 0;
 	pointer-events: none;
+}
+
+.footer{
+	height: 80px;
+	width: 100%;
+	
+}
+
+.spacer{
+	height: 0px;
+	width: 100vw;
+
 }
 
 /* Icons */
@@ -77,7 +100,7 @@ a:focus {
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	background: #7f40f1;
+	background: #0076E5;
 }
 
 .js .loading::after {
@@ -171,6 +194,17 @@ a:focus {
 	text-decoration: underline;
 }
 
+/* FONT SIZES */
+.em2{
+	font-size: 2em;
+}
+.em15{
+	font-size: 1.5em;
+}
+.em1{
+	margin-top: 0.2em;
+	font-size: 1em;
+}
 /* Content */
 .content {
 	position: relative;
@@ -179,7 +213,7 @@ a:focus {
 }
 
 .content--full {
-	height: 100vh;
+	height: 90vh;
 	min-height: 600px;
 }
 
@@ -202,6 +236,7 @@ a:focus {
 	flex: none;
 	width: 100%;
 	padding: 0 5vw;
+	margin-bottom: 10vh;
 }
 
 .content__heading--center {
@@ -225,7 +260,7 @@ a:focus {
 }
 
 .content__title--center {
-	margin: auto;
+	margin: auto auto auto 10vw;
 }
 
 .content__title--right {
@@ -250,6 +285,7 @@ a:focus {
 	display: inline-block;
 	white-space: nowrap;
 	position: relative;
+	/* font-size: 2em; */
 }
 
 .content__title__inner--offset-1 {
@@ -260,6 +296,7 @@ a:focus {
 .content__title__inner--offset-2 {
 	top: -0.25em;
 	left: 1.75vw;
+	/* font-size: 1.5em; */
 }
 
 .content__title__inner--offset-3 {
